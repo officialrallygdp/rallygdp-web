@@ -144,6 +144,49 @@ header{
     box-shadow:0 0 30px rgba(7,120,235,.50);
 
 }
+/* ===========================
+        LIVE EVENTS
+=========================== */
+
+.live-events{
+    width:90%;
+    margin:120px auto;
+}
+
+.event-card{
+    max-width:420px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.live-badge{
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+}
+
+.event-card h3{
+    font-size:36px;
+    line-height:1.3;
+}
+
+.event-card p{
+    color:var(--gray);
+    margin:0;
+}
+
+.event-card .btn-primary{
+    display:inline-block;
+    margin-top:15px;
+}
 
 /* ===========================
         HERO
@@ -438,3 +481,4 @@ display:none;
 }
 
 }
+
