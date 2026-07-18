@@ -1,478 +1,370 @@
-/* RallyGDP Premium Website */
-/* ===========================
-   RallyGDP Premium Website
-   Developed by Blue Bytes
-   =========================== */
+<!DOCTYPE html>
+<html lang="en">
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+<head>
 
-:root{
-    --primary:#0A84FF;
-    --secondary:#49A8FF;
-    --dark:#05070D;
-    --card:rgba(255,255,255,.05);
-    --border:rgba(255,255,255,.10);
-    --text:#ffffff;
-    --gray:#b8c1d1;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    <title>RallyGDP | Official Rally Navigation Platform</title>
 
-html{
-    scroll-behavior:smooth;
-}
+    <meta name="description"
+        content="Professional Time Speed Distance (TSD) Rally Navigation Platform">
 
-body{
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    background:linear-gradient(180deg,#05070D,#0b1220);
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    color:var(--text);
+    <link rel="stylesheet" href="css/style.css">
 
-    overflow-x:hidden;
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-}
+</head>
 
-a{
+<body>
 
-    text-decoration:none;
+    <!-- ================= HEADER ================= -->
 
-    color:white;
+ <header>
+    <nav class="navbar">
 
-}
+        <div class="logo">
+            <img src="IMAGE.webp" alt="RallyGDP Logo">
+            <h2>RallyGDP</h2>
+        </div>
 
-img{
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Live</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
 
-    max-width:100%;
+     <a href="https://play.google.com/store/apps/details?id=com.chronopulse.rallygdp&pcampaignid=web_share?id=YOUR_PACKAGE_NAME"
+   class="download-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+   Download App
+</a>
 
-    display:block;
+    </nav>
+</header>
 
-}
+    <!-- ================= HERO ================= -->
 
-/* ===========================
-        NAVBAR
-=========================== */
+    <section class="hero">
 
-header{
+        <div class="hero-content">
 
-    position:fixed;
+            <h1>
 
-    width:100%;
+                On Time.
 
-    top:0;
+                <span>Every Time.</span>
 
-    left:0;
+            </h1>
 
-    z-index:999;
+            <p>
 
-    backdrop-filter:blur(18px);
+                Professional Time-Speed-Distance (TSD) Rally Navigation Platform
+                trusted by rally drivers and navigators.
 
-    background:rgba(0,0,0,.45);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
+            </p>
 
-}
-
-.navbar{
-    width:95%;
-    max-width:1600px;
-    margin:auto;
-    height:85px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    flex-shrink:0;
-}
+            <div class="hero-buttons">
 
-.logo img{
-    width:58px;
-}
+                <a href="#" class="btn-primary">
 
-.logo h2{
-    font-size:22px;
-    font-weight:700;
-    white-space:nowrap;
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex:1;
-    gap:32px;
-    list-style:none;
-    margin:0 35px;
-}
-
-.nav-links li{
-    white-space:nowrap;
-}
+                    Download App
 
-.nav-links a{
-    color:#fff;
-    font-size:17px;
-    font-weight:600;
-    transition:.3s;
-}
+                </a>
 
-.nav-links a:hover{
-    color:var(--primary);
-}
+                <a href="#" class="btn-secondary">
 
-.download-btn{
-    display:inline-block;
-    padding:15px 35px;
-    border-radius:40px;
-    background:var(--primary);
-    color:#fff;
-    font-weight:600;
-    white-space:nowrap;
-    flex-shrink:0;
-    transition:.35s;
-    box-shadow:0 0 30px rgba(10,132,255,.40);
-}
+                    Live Event
 
-.download-btn:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 35px rgba(10,132,255,.60);
+                </a>
 
-}
-/* ===========================
-        LIVE EVENTS
-=========================== */
+            </div>
 
-.live-events{
-   padding:15px 35px;
-    border-radius:40px;
-    background:var(--primary);
-    color:#fff;
-    font-weight:600;
-    white-space:nowrap;
-    flex-shrink:0;
-    transition:.35s;
-    box-shadow:0 0 30px rgba(10,132,255,.40);
-}
+        </div>
 
-.download-btn:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 35px rgba(10,132,255,.60);
+    </section>
 
-.event-card h3{
-    font-size:36px;
-    line-height:1.3;
-}
+    <!-- ================= STATS ================= -->
 
-.event-card p{
-    color:var(--gray);
-    margin:0;
-}
+    <section class="stats">
 
-.event-card .btn-primary{
-    display:inline-block;
-    margin-top:15px;
-}
+        <div class="stat-card">
 
-/* ===========================
-        HERO
-=========================== */
+            <h2>18K+</h2>
 
-.hero{
+            <p>Users</p>
 
-    min-height:100vh;
+        </div>
 
-    display:flex;
+        <div class="stat-card">
 
-    justify-content:center;
+            <h2>250+</h2>
 
-    align-items:center;
+            <p>Events</p>
 
-    text-align:center;
+        </div>
 
-    padding:120px 20px;
+        <div class="stat-card">
 
-    background:
+            <h2>15+</h2>
 
-    linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.80)),
+            <p>Countries</p>
 
-    url("../assets/hero-bg.jpg") center/cover no-repeat;
+        </div>
 
-}
+        <div class="stat-card">
 
-.hero-content{
+            <h2>99%</h2>
 
-    max-width:900px;
+            <p>Accuracy</p>
 
-}
+        </div>
 
-.hero h1{
+    </section>
 
-    font-size:72px;
+    <!-- ================= ABOUT ================= -->
 
-    line-height:1.2;
+    <section class="about">
 
-    font-weight:800;
+        <div class="about-text">
 
-}
+            <h2>
 
-.hero span{
+                About RallyGDP
+                
 
-    color:var(--primary);
+            </h2>
 
-}
+            <p>
 
-.hero p{
+                RallyGDP is a professional Time-Speed-Distance (TSD) Rally Navigation
+                platform developed for rally drivers and navigators.
 
-    color:var(--gray);
+                It combines RoadBook, GPX Navigation, Speed Charts,
+                GPS Tracking, Odometer Correction and Penalty Calculation
+                into one powerful application.
 
-    margin:30px auto;
+            </p>
 
-    font-size:20px;
+            <a href="#" class="btn-primary">
 
-    max-width:700px;
+                Read More
 
-}
+            </a>
 
-.hero-buttons{
+        </div>
 
-    display:flex;
+        <div class="about-image">
+            <img src="RALLY GDP IMAGE.webp" alt="About RallyGDP">
 
-    justify-content:center;
+        </div>
 
-    gap:20px;
+    </section>
 
-    flex-wrap:wrap;
+    <!-- ================= LIVE EVENT ================= -->
 
-}
+    <section class="live-events">
 
-.btn-primary{
+        <h2>
 
-    padding:15px 35px;
+            Live Rally Events
 
-    border-radius:40px;
+        </h2>
 
-    background:var(--primary);
+        <div class="event-card">
 
-    color:white;
+            <span class="live-badge">
 
-    transition:.35s;
+                ● LIVE
 
-    box-shadow:0 0 30px rgba(10,132,255,.40);
+            </span>
 
-}
+            <h3>
 
-.btn-primary:hover{
+                Desert Quest 2026
 
-    transform:translateY(-5px);
+            </h3>
 
-}
+            <p>
 
-.btn-secondary{
+                DAY 2
 
-    padding:15px 35px;
+            </p>
 
-    border-radius:40px;
+ <p>Cars Running : 45</p>
 
-    border:2px solid var(--primary);
 
-    transition:.35s;
 
-}
+            
+<a href="https://live.chronopulse.com/"
+   class="btn-primary"
+   target="_blank"
+   rel="noopener noreferrer">
+    
+    View Live
 
-.btn-secondary:hover{
+</a>
 
-    background:var(--primary);
+        </div>
 
-}
+    </section>
 
-/* ===========================
-        STATS
-=========================== */
+    <!-- ================= FEATURES ================= -->
 
-.stats{
+    <section class="features">
 
-    width:90%;
+        <h2>
 
-    margin:80px auto;
+            Why RallyGDP?
 
-    display:grid;
+        </h2>
 
-    grid-template-columns:repeat(4,1fr);
+        <div class="feature-grid">
 
-    gap:25px;
+            <div class="feature">
 
-}
+                <i class="fa-solid fa-map-location-dot"></i>
 
-.stat-card{
+                <h3>GPX Navigation</h3>
 
-    background:var(--card);
+            </div>
 
-    border:1px solid var(--border);
+            <div class="feature">
 
-    padding:35px;
+                <i class="fa-solid fa-road"></i>
 
-    text-align:center;
+                <h3>RoadBook</h3>
 
-    border-radius:20px;
+            </div>
 
-    transition:.35s;
+            <div class="feature">
 
-    backdrop-filter:blur(10px);
+                <i class="fa-solid fa-gauge-high"></i>
 
-}
+                <h3>Speed Charts</h3>
 
-.stat-card:hover{
+            </div>
 
-    transform:translateY(-10px);
+            <div class="feature">
 
-    border-color:var(--primary);
+                <i class="fa-solid fa-location-crosshairs"></i>
 
-}
+                <h3>GPS Tracking</h3>
 
-.stat-card h2{
+            </div>
 
-    color:var(--primary);
+            <div class="feature">
 
-    font-size:45px;
+                <i class="fa-solid fa-volume-high"></i>
 
-}
+                <h3>Voice Alerts</h3>
 
-.stat-card p{
+            </div>
 
-    margin-top:10px;
+            <div class="feature">
 
-    color:var(--gray);
+                <i class="fa-brands fa-bluetooth-b"></i>
 
-}
+                <h3>Bluetooth Console</h3>
 
-/* ===========================
-        ABOUT
-=========================== */
+            </div>
 
-.about{
+        </div>
 
-    width:90%;
+    </section>
 
-    margin:120px auto;
+    <!-- ================= CONTACT ================= -->
 
-    display:grid;
+    <section class="contact">
 
-    grid-template-columns:1fr 1fr;
+        <h2>
 
-    gap:60px;
+            Contact
 
-    align-items:center;
+        </h2>
 
-}
+        <p>
 
-.about h2{
+            <strong>Owner :</strong> Samir Suneja
 
-    font-size:48px;
+        </p>
 
-    margin-bottom:20px;
+        <p>
 
-}
+            <strong>Phone :</strong> +91 9811227700
 
-.about p{
+        </p>
 
-    color:var(--gray);
+        <p>
 
-    line-height:1.9;
+            <strong>Email :</strong> support@bluebytesdata.com
 
-    margin-bottom:35px;
+        </p>
 
-}
+    </section>
 
-.about img{
+    <!-- ================= FOOTER ================= -->
 
-    border-radius:25px;
+    <footer>
 
-    box-shadow:0 0 40px rgba(10,132,255,.25);
+        <div class="footer-content">
 
-}
+            <h2>RallyGDP</h2>
 
-/* ===========================
-      SECTION TITLE
-=========================== */
+            <p>
 
-section h2{
+                Professional Time-Speed-Distance Rally Navigation Platform
 
-    text-align:center;
+            </p>
 
-    font-size:42px;
+            <br>
 
-    margin-bottom:50px;
+            <p>
 
-}
+                Developed by <strong>BBDL</strong>
 
-/* ===========================
-        RESPONSIVE
-=========================== */
+            </p>
 
-@media(max-width:992px){
+            <p>
 
-.nav-links{
+                Owner : <strong>Samir Suneja</strong>
 
-display:none;
+            </p>
 
-}
+            <p>
 
-.stats{
+                Powered by <strong>RallyGDP</strong>
 
-grid-template-columns:repeat(2,1fr);
+            </p>
 
-}
+            <br>
 
-.about{
+            <p>
 
-grid-template-columns:1fr;
+                © 2026 RallyGDP. All Rights Reserved.
 
-text-align:center;
+            </p>
 
-}
+        </div>
 
-.hero h1{
+    </footer>
 
-font-size:50px;
+    <script src="js/script.js"></script>
 
-}
+</body>
 
-}
-
-@media(max-width:768px){
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-.stats{
-
-grid-template-columns:1fr;
-
-}
-
-.logo h2{
-
-font-size:22px;
-
-}
-
-.download-btn{
-
-display:none;
-
-}
-
-}
+</html>
